@@ -1,16 +1,18 @@
 import className from 'classnames';
 
-type IButtonProps = {
+type IButtonNavProps = {
   xl?: boolean;
   children: string;
+  bold?: boolean; // nova propriedade para definir o texto como negrito
 };
 
-const Button = (props: IButtonProps) => {
+const ButtonNav = (props: IButtonNavProps) => {
   const btnClass = className({
     btn: true,
     'btn-xl': props.xl,
     'btn-base': !props.xl,
     'btn-primary': true,
+    'font-bold': props.bold, // adiciona a classe font-bold se a prop bold for true
   });
 
   return (
@@ -32,7 +34,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-white bg-primary-800;
+            @apply text-black bg-primary-700;
           }
 
           .btn-primary:hover {
@@ -44,4 +46,4 @@ const Button = (props: IButtonProps) => {
   );
 };
 
-export { Button };
+export { ButtonNav };

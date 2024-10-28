@@ -16,18 +16,18 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          100: '#E6F6FE',
-          200: '#C0EAFC',
-          300: '#9ADDFB',
-          400: '#4FC3F7',
-          500: '#03A9F4',
-          600: '#0398DC',
-          700: '#026592',
-          800: '#014C6E',
-          900: '#013349',
+          100: '#FFF9E6', // Tint 5
+          200: '#FFF2CC', // Tint 4
+          300: '#FFEB99', // Tint 3
+          400: '#FFE180', // Tint 2
+          500: '#FFD656', // Tint 1
+          600: '#FFCE34', // Shade 2
+          700: '#FFC100', // Shade 3
+          800: '#E6A700', // Shade 4
+          900: '#CC8F00', // Shade 5
         },
         gray: {
-          100: '#f7fafc',
+          100: '#F5F7FA',
           200: '#edf2f7',
           300: '#e2e8f0',
           400: '#cbd5e0',
