@@ -9,15 +9,15 @@ const Footer = () => (
   <Background color="bg-black">
     <Section>
       <div className="grid grid-cols-1 gap-8 py-10 text-white sm:grid-cols-2 md:grid-cols-4">
-        {/* Coluna 1: Logo */}
-        <div className="flex flex-col items-start">
-          <LogoWhite />
+        <div className="flex flex-col items-center">
+          <div className="size-40 sm:size-48">
+            <LogoWhite />
+          </div>
         </div>
 
-        {/* Coluna 2: Páginas */}
-        <div className="flex flex-col items-start">
-          <h4 className="mb-4 text-left font-bold">Home</h4>
-          <ul className="text-left">
+        <div className="flex flex-col items-center">
+          <h4 className="mb-4 text-center font-bold">Home</h4>
+          <ul className="text-center">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -33,10 +33,9 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Coluna 3: Links adicionais */}
-        <div className="flex flex-col items-start">
-          <h4 className="mb-4 text-left font-bold">Links</h4>
-          <ul className="text-left">
+        <div className="flex flex-col items-center">
+          <h4 className="mb-4 text-center font-bold">Links</h4>
+          <ul className="text-center">
             <li>
               <Link href="/link1">Link 1</Link>
             </li>
@@ -49,10 +48,9 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Coluna 4: Contato */}
-        <div className="flex flex-col items-start">
-          <h4 className="mb-4 text-left font-bold">Contate-nos !</h4>
-          <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center">
+          <h4 className="mb-4 text-center font-bold">Contate-nos!</h4>
+          <div className="flex flex-col items-center">
             <CopyEmailButton email="olho@unicamp.br" />
           </div>
         </div>

@@ -11,27 +11,27 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/Home">Home</Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/Pesquisadores">Pesquisadores</Link>
+          <Link href="/pesquisadores">Pesquisadores</Link>
         </li>
         <li>
-          <Link href="/História">História</Link>
+          <Link href="/historia">História</Link>
         </li>
         <li>
-          <Link href="/contact">Contato</Link>
+          <Link href="/contato">Contato</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-5 pb-5">
+    <Section yPadding="pt-5 pb-5  ">
       <div className="flex items-center justify-center p-8">
         <TwoColumnLayout
           mainTitle="Laboratório de Estudos Audiovisuais"
           title="Faculdade de Educação da Unicamp"
           imageUrl="/assets/images/img_kelly.jpeg"
-          credits="Imagem por Autor - Link para a referência"
+          credits="Aves - Kelly Sabino"
         />
       </div>
     </Section>

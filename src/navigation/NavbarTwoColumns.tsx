@@ -53,11 +53,12 @@ const NavbarTwoColumns = (props: INavbarProps) => {
         </ul>
       </nav>
 
-      {/* Container para o botão "Produção" */}
       <div
         className={`flex ${isOpen ? 'mt-4 w-full justify-center' : 'lg:ml-4 lg:mt-0'}`}
       >
-        <ButtonNav xl={false}>Produção</ButtonNav>
+        <ButtonNav to="/producao" xl={false}>
+          Produção
+        </ButtonNav>
       </div>
 
       <style jsx>

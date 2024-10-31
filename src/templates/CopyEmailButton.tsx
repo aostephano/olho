@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaCheck, FaClipboard } from 'react-icons/fa';
 
 interface CopyEmailButtonProps {
   email: string;
@@ -10,7 +11,7 @@ const CopyEmailButton = ({ email }: CopyEmailButtonProps) => {
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reseta após 2 segundos
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -20,7 +21,7 @@ const CopyEmailButton = ({ email }: CopyEmailButtonProps) => {
         onClick={handleCopy}
         className="flex items-center justify-center rounded-md bg-gray-700 px-2 py-1 text-white hover:bg-gray-500 focus:outline-none"
       >
-        {copied ? '✅' : '📋'}
+        {copied ? <FaCheck className="text-green-500" /> : <FaClipboard />}
       </button>
     </div>
   );

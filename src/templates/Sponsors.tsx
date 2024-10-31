@@ -1,93 +1,116 @@
 import Image from 'next/image';
 
+import { Background } from '@/background/Background';
 import { Section } from '@/layout/Section';
 
 const Sponsors = () => (
-  <Section
-    title="Sponsors"
-    description="Our sponsors' exceptional support has made this project possible."
-  >
-    <table className="mx-auto border-collapse">
-      <tbody>
-        <tr className="h-56">
-          <td className="border-2 border-gray-300 p-3">
-            <a
-              href="https://sentry.io/for/nextjs/?utm_source=github&utm_medium=paid-community&utm_campaign=general-fy25q1-nextjs&utm_content=github-banner-nextjsboilerplate-logo"
-              target="_blank"
-            >
-              <Image
-                src="/assets/images/sentry-dark.png"
-                alt="Sentry"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <a
-              href="https://betterstack.com/?utm_source=github&utm_medium=sponsorship&utm_campaign=next-js-boilerplate"
-              target="_blank"
-            >
-              <Image
-                src="/assets/images/better-stack-dark.png"
-                alt="Better Stack"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <a href="https://nextlessjs.com">
-              <Image
-                src="/assets/images/nextlessjs.png"
-                alt="React SaaS Boilerplate Next.js"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-        </tr>
-        <tr className="h-56">
-          <td className="border-2 border-gray-300 p-3">
-            <a
-              href="https://clerk.com?utm_source=github&utm_medium=sponsorship&utm_campaign=nextjs-boilerplate"
-              target="_blank"
-            >
-              <Image
-                src="/assets/images/clerk.png"
-                alt="Clerk – Authentication & User Management for Next.js"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <a
-              href="https://turso.tech/?utm_source=nextjsstarterbp"
-              target="_blank"
-            >
-              <Image
-                src="/assets/images/turso.png"
-                alt="SQLite Developer Experience"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-          <td className="border-2 border-gray-300 p-3">
-            <a href="https://l.crowdin.com/next-js" target="_blank">
-              <Image
-                src="https://support.crowdin.com/assets/logos/core-logo/svg/crowdin-core-logo-cDark.svg"
-                alt="Crowdin"
-                width={260}
-                height={224}
-              />
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </Section>
+  <Background color="bg-gray-100">
+    <Section
+      title="Nossos parceiros"
+      description="Instituições que contribuem para a existência da rede."
+    >
+      <div className="flex flex-wrap justify-center gap-6">
+        <a
+          href="https://www.unicamp.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/unicamp.png"
+            alt="Unicamp"
+            width={256}
+            height={270}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://www.fe.unicamp.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/fe_logo.png"
+            alt="Faculdade de Educação"
+            width={256}
+            height={330}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://educa.campinas.sp.gov.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/secretaria_edu.png"
+            alt="Secretaria de Educação"
+            width={256}
+            height={140}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://www.fapesp.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/fapesp_logo.png"
+            alt="FAPESP"
+            width={200}
+            height={60}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://www.capes.gov.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/capes_logo.png"
+            alt="CAPES"
+            width={180}
+            height={163}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://www.geoimagens.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/geoimagens_logo.png"
+            alt="Geoimagens"
+            width={256}
+            height={130}
+            className="size-full object-contain"
+          />
+        </a>
+        <a
+          href="https://www.redekino.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/rede_kino_black.png"
+            alt="Rede Kino Black"
+            width={256}
+            height={180}
+            className="size-full object-contain"
+          />
+        </a>
+      </div>
+    </Section>
+  </Background>
 );
 
 export { Sponsors };
