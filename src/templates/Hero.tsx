@@ -30,7 +30,7 @@ const Hero = () => (
         <TwoColumnLayout
           mainTitle="Laboratório de Estudos Audiovisuais"
           title="Faculdade de Educação da Unicamp"
-          imageUrl="/assets/images/img_kelly.jpeg"
+          imageUrl="/assets/images/kelly_02.jpeg"
           credits="Aves - Kelly Sabino"
         />
       </div>
