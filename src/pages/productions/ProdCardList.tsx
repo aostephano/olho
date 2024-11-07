@@ -4,9 +4,12 @@ import CardProd from './CardProd';
 
 const ProdCardList = () => (
   <div className="p-4">
-    <h2 className="mb-6 text-center text-3xl font-bold text-gray-800">
+    <h2 className="mb-2 text-center text-3xl font-bold text-gray-800">
       Pesquisas em Destaque
     </h2>
+    <h3 className="mb-6 text-center text-xl text-gray-600">
+      Explore as principais contribuições acadêmicas do laboratório.
+    </h3>
     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
       <CardProd
         icon="teacher"
