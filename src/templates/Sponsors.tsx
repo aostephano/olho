@@ -39,7 +39,7 @@ const Sponsors = () => (
           />
         </a>
         <a
-          href="https://educa.campinas.sp.gov.br"
+          href="https://www.instagram.com/educacao.campinas/?hl=en"
           target="_blank"
           rel="noopener noreferrer"
           className="h-20 w-40 overflow-hidden"

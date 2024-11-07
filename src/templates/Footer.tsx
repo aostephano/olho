@@ -34,16 +34,18 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-col items-center">
-          <h4 className="mb-4 text-center font-bold">Links</h4>
+          <h4 className="mb-4 text-center font-bold">Parceiros</h4>
           <ul className="text-center">
             <li>
-              <Link href="/link1">Link 1</Link>
+              <Link href="https://unicamp.br">UNICAMP</Link>
             </li>
             <li>
-              <Link href="/link2">Link 2</Link>
+              <Link href="/link2">Faculdade de Educação</Link>
             </li>
             <li>
-              <Link href="/link3">Link 3</Link>
+              <Link href="https://www.instagram.com/educacao.campinas/?hl=en">
+                Secretaria de Educação
+              </Link>
             </li>
           </ul>
         </div>
