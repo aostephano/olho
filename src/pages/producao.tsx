@@ -6,7 +6,7 @@ import { NavbarTwoColumns } from '@/navigation/NavbarTwoColumns';
 import { Footer } from '@/templates/Footer';
 import { Logo } from '@/templates/Logo';
 
-import { ProdCardList } from './productions/ProdCardList';
+import ProdCardList from './productions/ProdCardList';
 
 const ProducaoPage = () => {
   return (

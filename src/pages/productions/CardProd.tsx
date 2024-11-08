@@ -3,7 +3,7 @@ import { FaChalkboardTeacher, FaFlask, FaPalette } from 'react-icons/fa';
 
 interface CardProdProps {
   icon: 'teacher' | 'science' | 'art';
-  researcherNames: string[];
+  researcherNames: string[] | undefined;
   description: string;
   imageUrl: string;
   linkUrl: string;
@@ -16,6 +16,19 @@ const CardProd: React.FC<CardProdProps> = ({
   imageUrl,
   linkUrl,
 }) => {
+  const renderIcon = (iconType: 'teacher' | 'science' | 'art') => {
+    switch (iconType) {
+      case 'teacher':
+        return <FaChalkboardTeacher />;
+      case 'science':
+        return <FaFlask />;
+      case 'art':
+        return <FaPalette />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <a
       href={linkUrl}
@@ -29,13 +42,13 @@ const CardProd: React.FC<CardProdProps> = ({
         className="h-40 w-full rounded-t-lg object-cover"
       />
       <div className="flex flex-col items-center p-4">
-        <div className="mb-2 flex size-12 items-center justify-center rounded-full bg-primary-700 text-white">
-          {icon === 'teacher' && <FaChalkboardTeacher className="text-xl" />}
-          {icon === 'science' && <FaFlask className="text-xl" />}
-          {icon === 'art' && <FaPalette className="text-xl" />}
+        <div className="mb-2 flex items-center justify-center rounded-full bg-primary-700 text-white">
+          {renderIcon(icon)}
         </div>
         <h3 className="text-center text-lg font-semibold text-gray-800">
-          {researcherNames.join(', ')}
+          {researcherNames && researcherNames.length > 0
+            ? researcherNames.toString()
+            : 'N/A'}
         </h3>
         <div
           className="mb-4 grow text-center text-sm text-gray-600"

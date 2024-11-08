@@ -78,4 +78,4 @@ const ProdCardList = () => (
   </div>
 );
 
-export { ProdCardList };
+export default ProdCardList;
