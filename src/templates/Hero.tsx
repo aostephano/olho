@@ -17,10 +17,13 @@ const Hero = () => (
           <Link href="/pesquisadores">Pesquisadores</Link>
         </li>
         <li>
-          <Link href="/historia">História</Link>
+          <Link href="/projetos">Projetos</Link>
         </li>
         <li>
-          <Link href="/contato">Contato</Link>
+          <Link href="/sobre">Sobre nós</Link>
+        </li>
+        <li>
+          <Link href="/milton">Milton</Link>
         </li>
       </NavbarTwoColumns>
     </Section>

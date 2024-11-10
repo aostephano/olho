@@ -18,15 +18,17 @@ const Custom404 = () => {
             <Link href="/pesquisadores">Pesquisadores</Link>
           </li>
           <li>
-            <Link href="/historia">História</Link>
+            <Link href="/projetos">Projetos</Link>
           </li>
           <li>
-            <Link href="/contato">Contato</Link>
+            <Link href="/sobre">Sobre nós</Link>
+          </li>
+          <li>
+            <Link href="/milton">Milton</Link>
           </li>
         </NavbarTwoColumns>
       </Section>
 
-      {/* Alterações feitas aqui */}
       <div className="flex min-h-screen grow flex-col items-center justify-center py-20 text-center">
         <h1 className="text-4xl font-bold">404 - Página Não Encontrada</h1>
         <p className="mt-4 text-lg">

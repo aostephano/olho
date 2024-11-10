@@ -6,9 +6,9 @@ import { NavbarTwoColumns } from '@/navigation/NavbarTwoColumns';
 import { Footer } from '@/templates/Footer';
 import { Logo } from '@/templates/Logo';
 
-import ProdCardList from './productions/ProdCardList';
+import ProjetosCardList from './projetos/ProjetosCardList';
 
-const ProducaoPage = () => {
+const ProjetosPage = () => {
   return (
     <Background color="bg-gray-100">
       <Section yPadding="py-6">
@@ -33,7 +33,7 @@ const ProducaoPage = () => {
 
       <Section yPadding="pt-5 pb-5">
         <div className="flex items-center justify-center p-8">
-          <ProdCardList />
+          <ProjetosCardList />
         </div>
       </Section>
       <Footer />
@@ -41,4 +41,4 @@ const ProducaoPage = () => {
   );
 };
 
-export default ProducaoPage;
+export default ProjetosPage;

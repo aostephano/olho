@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Section } from '@/layout/Section';
 
@@ -7,11 +8,7 @@ const AboutMilton = () => {
     <Section>
       <div className="flex flex-col items-center justify-center p-6 text-black md:flex-row">
         <div className="mb-4 shrink-0 text-center md:mb-0 md:mr-6">
-          <a
-            href="http://lattes.cnpq.br/6776847649795762"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/milton/">
             <Image
               src="/assets/images/milton_almeida_foto.jpeg"
               alt="Milton Almeida"
@@ -19,7 +16,7 @@ const AboutMilton = () => {
               width={300}
               height={230}
             />
-          </a>
+          </Link>
           <p className="mt-2 text-center text-sm">
             Milton de Almeida - Criador do OLHO
           </p>
