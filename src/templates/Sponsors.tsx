@@ -108,6 +108,20 @@ const Sponsors = () => (
             className="size-full object-contain"
           />
         </a>
+        <a
+          href="https://educa.campinas.sp.gov.br/educatv"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="h-20 w-40 overflow-hidden"
+        >
+          <Image
+            src="/assets/sponsors/educatv.png"
+            alt="Rede Kino Black"
+            width={400}
+            height={400}
+            className="size-full object-contain"
+          />
+        </a>
       </div>
     </Section>
   </Background>
