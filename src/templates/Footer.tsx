@@ -55,6 +55,23 @@ const Footer = () => (
           <div className="flex flex-col items-center">
             <CopyEmailButton email="olho@unicamp.br" />
           </div>
+          <div className="mt-2">
+            <Link
+              href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template"
+              target="_blank"
+            >
+              <div className="mt-2 flex flex-col items-center text-sm text-gray-500">
+                <Link
+                  href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template"
+                  target="_blank"
+                >
+                  <span className="hover:text-gray-700">
+                    Template NextJS utilizado na confecção do portal
+                  </span>
+                </Link>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </Section>

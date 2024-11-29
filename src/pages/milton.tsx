@@ -42,7 +42,7 @@ const MiltonPage = () => {
               className="mb-4 size-32 rounded-full object-cover sm:mb-0 sm:size-48"
             />
             <p className="mb-6 text-lg text-gray-700 sm:max-w-2xl">
-              AALorem ipsum dddolor sit amet, consectetur adipiscing elit. Nulla
+              Lorem ipsum dddolor sit amet, consectetur adipiscing elit. Nulla
               convallis urna eu vulputate dictum. Quisque sollicitudin augue id
               metus faucibus, in tincidunt metus pharetra. Sed a efficitur
               velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -69,9 +69,9 @@ const MiltonPage = () => {
               <p className="text-sm text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 vehicula elit eu dolor fermentum, sit amet egestas lorem
-                euismod. A arte, como uma forma de expressão, é vista como um
-                meio poderoso para ensinar valores e despertar a criatividade
-                nas novas gerações.
+                euismod. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Vivamus vehicula elit eu dolor fermentum, sit amet egestas
+                lorem euismod.
               </p>
             </div>
 
