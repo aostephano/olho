@@ -34,7 +34,7 @@ const Hero = () => (
           mainTitle="Laboratório de Estudos Audiovisuais"
           title="Faculdade de Educação da Unicamp"
           imageUrl="/assets/images/gravura_kelly.jpg"
-          credits="Aves - Kelly Sabino"
+          credits="Gravura - Kelly Sabino"
         />
       </div>
     </Section>
